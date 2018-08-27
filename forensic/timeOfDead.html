@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Time of Dead </title>
+    <style>
+    .red {color: red;}
+    </style>
+  </head>
+  <body>
+    Livor morthis
+    <br>
+    <form action="">
+      <input type="radio" name="livorMorthis" value="a"> กดแล้วจางหายไป<br>
+      <input type="radio" name="livorMorthis" value="b"> กดแล้วไม่จางหายไป<br>
+    </form>
+    <br>
+    Rigor morthis
+    <br>
+    <form action="">
+      <input type="checkbox" name="small" value="a"> กล้ามเนื้อมัดเล็กเกร็ง<br>
+      <input type="checkbox" name="large" value="a"> กล้ามเนื้อมัดใหญเกร็ง่<br>
+      <span class="red" id="rigorMorthisError">การเกร็งตัวของกล้ามเนื้อเริ่มจากมัดเล็กไปยังมัดใหญ่</span> <!-- Hide this and reveal when only large is ticked -->
+    </form>
+    <br>
+    <input type="checkbox" id="decom" value="a"> Decomposition
+    <br>
+
+    <form id="decompositionForm" action=""> <!-- Hide this and reveal when decomposition is ticked -->
+      <input type="checkbox"> Fly egg<br>
+      <input type="checkbox"> Fly larva : Size <input type="text"> cm<br>
+      <input type="checkbox"> Fly pupa<br>
+    </form>
+
+  </body>
+</html>
