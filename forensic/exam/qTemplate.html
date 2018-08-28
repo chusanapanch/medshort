@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>MedShort</title>
+  <script>
+  function reveal() {
+    document.getElementById("answer").style.visibility = "visible";
+}
+  </script>
+</head>
+<body>
+  <p id="question">ใส่คำถามตรงนี้</p>
+  <p id="choice">
+   <input type="radio" name="choice" value="A">ตัวเลือกที่ 1<br>
+   <input type="radio" name="choice" value="B">ตัวเลือกที่ 2<br>
+   <input type="radio" name="choice" value="C">ตัวเลือกที่ 3<br>
+   <input type="radio" name="choice" value="D">ตัวเลือกที่ 4<br>
+   <input type="radio" name="choice" value="E">ตัวเลือกที่ 5<br>
+  </p>
+  <button type="button" onclick="reveal()">เฉลย</button>
+
+  <div id="answer" style="visibility:hidden;">
+  <div id="answerChoice">เฉลยข้อ </div>
+  <div id="answerInfo">ใส่คำอธิบายตรงนี้</div>
+  </div>
+</body>
+</html>
