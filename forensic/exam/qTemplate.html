@@ -3,24 +3,25 @@
 <head>
   <title>MedShort</title>
   <script>
-  function reveal() {
-    document.getElementById("answer").style.visibility = "visible";
-}
+  function reveal(p1) {
+    document.getElementById(p1).style.visibility = "visible";}
+  function hlight(p1) {
+    document.getElementById(p1).style.color = "red";}
   </script>
 </head>
 <body>
   <p id="question">ใส่คำถามตรงนี้</p>
   <p id="choice">
-   <input type="radio" name="choice" value="A">ตัวเลือกที่ 1<br>
-   <input type="radio" name="choice" value="B">ตัวเลือกที่ 2<br>
-   <input type="radio" name="choice" value="C">ตัวเลือกที่ 3<br>
-   <input type="radio" name="choice" value="D">ตัวเลือกที่ 4<br>
-   <input type="radio" name="choice" value="E">ตัวเลือกที่ 5<br>
+   <div id="A"><input type="radio" name="choice" value="A">A. <br></div>
+   <div id="B"><input type="radio" name="choice" value="B">B. <br></div>
+   <div id="C"><input type="radio" name="choice" value="C">C. <br></div>
+   <div id="D"><input type="radio" name="choice" value="D">D. <br></div>
+   <div id="E"><input type="radio" name="choice" value="E">E. <br></div>
   </p>
-  <button type="button" onclick="reveal()">เฉลย</button>
+  <button type="button" onclick=reveal("answer");hlight("A")>เฉลย</button>
 
   <div id="answer" style="visibility:hidden;">
-  <div id="answerChoice">เฉลยข้อ </div>
+  <div id="answerChoice">เฉลยข้อ A.</div>
   <div id="answerInfo">ใส่คำอธิบายตรงนี้</div>
   </div>
 </body>

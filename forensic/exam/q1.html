@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>MedShort</title>
+  <script>
+  function reveal() {
+    document.getElementById("answer").style.visibility = "visible";
+}
+  </script>
+</head>
+<body>
+  <p id="question">1. ผู้ป่วยถูกยิงที่ต้นขามา ซักประวัติได้ว่าถูกเจ้าของทรัพย์สินที่ตนไปลักทรัพย์ยิง ผู้ป่วยบอกแพทย์ให้เก็บเป็นความลับ ต่อมาศาลสั่งให้บอกเกี่ยวกับการรักษา แพทย์จะทำอย่างไร</p>
+  <p id="choice">
+   <input type="radio" name="choice" value="A">A. บอกไม่ได้เนื่องจากเป็นความลับ<br>
+   <input type="radio" name="choice" value="B">B. ส่งเรื่องให้เจ้าหน้าที่สอบสวนต่อ<br>
+   <input type="radio" name="choice" value="C">C. ชี้แจงเฉพาะค่ารักษา<br>
+   <input type="radio" name="choice" value="D">D. เปิดเผยเกี่ยวกับการรักษาเท่านั้น<br>
+   <input type="radio" name="choice" value="E">E. เปิดเผยข้อมูลที่ซักประวัติได้<br>
+  </p>
+  <button type="button" onclick="reveal()">เฉลย</button>
+
+  <div id="answer" style="visibility:hidden;">
+  <div id="answerChoice">เฉลยข้อ D.</div>
+  <div id="answerInfo">ต้องปฎิบัติตามคำสั่งของศาล แม้ศาลต้องการข้อมูลที่ซักประวัติมา ก็ต้องให้ข้อมูลว่าซักประวัติได้อย่างไร</div>
+  </div>
+</body>
+</html>
