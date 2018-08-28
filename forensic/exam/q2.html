@@ -3,21 +3,22 @@
 <head>
   <title>MedShort</title>
   <script>
-  function reveal() {
-    document.getElementById("answer").style.visibility = "visible";
-}
+  function reveal(p1) {
+    document.getElementById(p1).style.visibility = "visible";}
+  function hlight(p1) {
+    document.getElementById(p1).style.color = "red";}
   </script>
 </head>
 <body>
-  <p id="question">2. การตายอย่างกระทันหันโดยไม่คาดคิดมีสาเหตุจากความผิดปรกติของระบบใดในร่างกายมากที่สุด</p>
+  <p id="question">การตายอย่างกระทันหันโดยไม่คาดคิดมีสาเหตุจากความผิดปรกติของระบบใดในร่างกายมากที่สุด</p>
   <p id="choice">
-   <input type="radio" name="choice" value="A">A. RS<br>
-   <input type="radio" name="choice" value="B">B. CVS<br>
-   <input type="radio" name="choice" value="C">C. KUB<br>
-   <input type="radio" name="choice" value="D">D. GI<br>
-   <input type="radio" name="choice" value="E">E. NS<br>
+   <div id="A"><input type="radio" name="choice" value="A">A. RS<br></div>
+   <div id="B"><input type="radio" name="choice" value="B">B. CVS<br></div>
+   <div id="C"><input type="radio" name="choice" value="C">C. GI<br></div>
+   <div id="D"><input type="radio" name="choice" value="D">D. KUB<br></div>
+   <div id="E"><input type="radio" name="choice" value="E">E. NS<br></div>
   </p>
-  <button type="button" onclick="reveal()">เฉลย</button>
+  <button type="button" onclick=reveal("answer");hlight("B")>เฉลย</button>
 
   <div id="answer" style="visibility:hidden;">
   <div id="answerChoice">เฉลยข้อ B.</div>
