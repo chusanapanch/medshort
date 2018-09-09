@@ -1,0 +1,488 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Modality</title>
+  </head>
+
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+  th, td {padding: 5px;}
+  .centre {text-align: center;}
+  </style>
+
+  <body>
+    <h1>Modality</h1>
+    <table>
+      <tr>
+        <th width="50%">Modality</th>
+        <th width="20%">Pros</th>
+        <th width="20%">Cons</th>
+      </tr>
+      <tr>
+        <td>Heat <button type="button" onclick="showHeat()" id="showHeatButton">Show</button>
+        <button type="button" onclick="hideHeat()" id="hideHeatButton">Hide</button></td>
+        <td>
+          <ul>
+            <li>Subacute inflammation</li>
+            <li>Pain</li>
+            <li>Muscle spasm</li>
+            <li>Limit ROM</li>
+            <li>To promote healing</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Acute inflammation</li>
+            <li>Malignancy</li>
+            <li>Hemorrhage risk</li>
+            <li>Thrombophlebitis</li>
+            <li>Impair sensation</li>
+            <li>Communication deficit</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="heatSub1">
+        <td>
+          <ul>
+            <li>Hydrocollator pack</li>
+          </ul></td>
+        <td>
+          <ul>
+            <li>Easy</li>
+            <li>Large area</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="heatSub2">
+        <td>
+          <ul>
+            <li>Paraffin bath</li>
+          </ul></td>
+        <td>
+          <ul>
+            <li>Distal extremitiess</li>
+            <li>Good contact</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="heatSub3">
+        <td>
+          <ul>
+            <li>Paraffin paint</li>
+          </ul></td>
+        <td>
+          <ul>
+            <li>Children</li>
+            <li>Location that unable to dip</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="heatSub4">
+        <td>
+          <ul>
+            <li>Whirl pool bath</li>
+          </ul></td>
+        <td>
+          <ul>
+            <li>Edema control</li>
+            <li>Water exercise</li>
+            <li>Body part</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="heatSub5">
+        <td>
+          <ul>
+            <li>Hubbard tank</li>
+          </ul></td>
+        <td>
+          <ul>
+            <li>Edema control</li>
+            <li>Water exercise</li>
+            <li>Whole body</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="heatSub6">
+        <td>
+          <ul>
+            <li>Ultrasound</li>
+          </ul></td>
+        <td>
+          <ul>
+            <li>Fat cavitation</li>
+            <li>Micromassage</li>
+            <li>Increase enzyme activity</li>
+          </ul>
+        </td>
+        <td id="heatSub7">
+          <ul>
+            <li>Fluid cavity</li>
+            <li>Pacemakers</li>
+            <li>Growing epiphysis</li>
+            <li>Infection</li>
+            <li>Bone cement</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="heatSub8">
+        <td>
+          <ul>
+            <li>Short wave diathermy</li>
+          </ul></td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Metal</li>
+            <li>Contact lens</li>
+            <li>Menstruation</li>
+            <li>Pregnant</li>
+            <li>Growing epiphysis</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="heatSub9">
+        <td>
+          <ul>
+            <li>Microwave diathermy</li>
+          </ul></td>
+        <td>
+          <ul>
+            <li>Superficial muscle</li>
+            <li>Joint</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Produce cataract</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Cryotherapy <button type="button" onclick="showCold()" id="showColdButton">Show</button>
+        <button type="button" onclick="hideCold()" id="hideColdButton">Hide</button></td>
+        <td>
+          <ul>
+            <li>Acute inflammation</li>
+            <li>Decrease spasticity</li>
+            <li>Decrease metabolism</li>
+            <li>Increase isometric strenght</li>
+            <li>Increase pain threshold</li>
+            <li>Edema</li>
+            <li>Faciliate contraction</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Increase joint stiffness</li>
+            <li>Impair circulation</li>
+            <li>Open wound >24 hrs</li>
+            <li>Impair sensation</li>
+            <li>Communication deficit</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="coldSub1">
+        <td>
+          <ul>
+            <li>Ice pack</li>
+          </ul></td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="coldSub2">
+        <td>
+          <ul>
+            <li>Ice whirlpool</li>
+          </ul></td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="coldSub3">
+        <td>
+          <ul>
+            <li>Ice massage</li>
+          </ul></td>
+        <td>
+          <ul>
+            <li>Acute muscle guarding</li>
+            <li>Small area</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="coldSub4">
+        <td>
+          <ul>
+            <li>Vapocoolant sprays</li>
+          </ul></td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Electrical current <button type="button" onclick="showElec()" id="showElecButton">Show</button>
+          <button type="button" onclick="hideElec()" id="hideElecButton">Hide</button></td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Carotid sinus</li>
+            <li>Epiglottis</li>
+            <li>Pacemakers</li>
+            <li>Pregnant</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="elecSub1">
+        <td>
+          <ul>
+            <li>Functional Electrical Stimulation</li>
+          </ul></td>
+        <td>
+          <ul>
+            <li>Strenghtening</li>
+            <li>Endurance</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr id="elecSub2">
+        <td>
+            <ul>
+              <li>Transcutaneous Electrical Nerve Stimulation</li>
+            </ul></td>
+        <td>
+          <ul>
+            <li>Gate control theory</li>
+            <li>Opiate pain control</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Spinal traction
+        </td>
+        <td>
+          <ul>
+            <li>Acute injury</li>
+            <li>Unstable joint</li>
+            <li>Compression</li>
+            <li>Osteoporosis</li>
+            <li>Spinal infection</li>
+            <li>Spinal malignancy</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Shock wave
+        </td>
+        <td>
+          <ul>
+            <li>Cavitation</li>
+            <li>Breakdown calcification</li>
+            <li>Increase circulation</li>
+            <li>Stimulate osteoblast - fibroblast</li>
+            <li>Plantar fasciitis</li>
+            <li>Lateral epicondylitis</li>
+            <li>Rotator cuff tendinopathy</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Bleeding risk</li>
+            <li>Malignancy</li>
+            <li>Hollow organ</li>
+            <li>Lung</li>
+            <li>Pregnant</li>
+            <li>Growing epiphysis</li>
+            <li>Infection</li>
+            <li>Pacemakers</li>
+            <li>Steroid use</li>
+            <li>Tendon rupture</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Laser
+        </td>
+        <td>
+          <ul>
+            <li>Promote healing</li>
+            <li>Decrease inflammation</li>
+            <li>Decreas edema</li>
+            <li>Gate control</li>
+            <li>Increase microcirculation</li>
+            <li>Osteoporosis</li>
+            <li>Bell's palsy</li>
+            <li>Low back pain</li>
+            <li>Subacromial impingement</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Eye</li>
+            <li>Tattoo</li>
+            <li>Malignancy</li>
+            <li>Endocrine organ</li>
+          </ul>
+        </td>
+      </tr>
+
+    </table>
+
+    <script>
+
+
+    function hideHeat() {
+      document.getElementById("heatSub1").style.display="none";
+      document.getElementById("heatSub2").style.display="none";
+      document.getElementById("heatSub3").style.display="none";
+      document.getElementById("heatSub4").style.display="none";
+      document.getElementById("heatSub5").style.display="none";
+      document.getElementById("heatSub6").style.display="none";
+      document.getElementById("heatSub7").style.display="none";
+      document.getElementById("heatSub8").style.display="none";
+      document.getElementById("heatSub9").style.display="none";
+      document.getElementById("showHeatButton").style.display="";
+      document.getElementById("hideHeatButton").style.display="none";}
+    function showHeat() {
+      document.getElementById("heatSub1").style.display="";
+      document.getElementById("heatSub2").style.display="";
+      document.getElementById("heatSub3").style.display="";
+      document.getElementById("heatSub4").style.display="";
+      document.getElementById("heatSub5").style.display="";
+      document.getElementById("heatSub6").style.display="";
+      document.getElementById("heatSub7").style.display="";
+      document.getElementById("heatSub8").style.display="";
+      document.getElementById("heatSub9").style.display="";
+      document.getElementById("showHeatButton").style.display="none";
+      document.getElementById("hideHeatButton").style.display="";}
+
+    hideHeat()
+
+    </script>
+
+    <script>
+
+
+    function hideCold() {
+      document.getElementById("coldSub1").style.display="none";
+      document.getElementById("coldSub2").style.display="none";
+      document.getElementById("coldSub3").style.display="none";
+      document.getElementById("coldSub4").style.display="none";
+      document.getElementById("showColdButton").style.display="";
+      document.getElementById("hideColdButton").style.display="none";}
+    function showCold() {
+      document.getElementById("coldSub1").style.display="";
+      document.getElementById("coldSub2").style.display="";
+      document.getElementById("coldSub3").style.display="";
+      document.getElementById("coldSub4").style.display="";
+      document.getElementById("showColdButton").style.display="none";
+      document.getElementById("hideColdButton").style.display="";}
+
+    hideCold()
+
+    </script>
+
+    <script>
+
+
+    function hideElec() {
+      document.getElementById("elecSub1").style.display="none";
+      document.getElementById("elecSub2").style.display="none";
+      document.getElementById("showElecButton").style.display="";
+      document.getElementById("hideElecButton").style.display="none";}
+    function showElec() {
+      document.getElementById("elecSub1").style.display="";
+      document.getElementById("elecSub2").style.display="";
+      document.getElementById("showElecButton").style.display="none";
+      document.getElementById("hideElecButton").style.display="";}
+
+    hideElec()
+
+    </script>
+
+  </body>
+</html>
